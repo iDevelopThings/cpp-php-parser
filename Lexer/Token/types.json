@@ -1,0 +1,547 @@
+[
+  {
+    "key": "ILLEGAL",
+    "description": "Illegal token",
+    "matches": null
+  },
+  {
+    "key": "END_OF_FILE",
+    "description": "End of file token",
+    "matches": "\\0",
+    "ignore_in": [
+      "single_matches"
+    ]
+  },
+  {
+    "key": "ERROR",
+    "description": "Error token",
+    "matches": null
+  },
+  {
+    "key": "KEYWORD",
+    "description": "Keyword Token",
+    "matches": null
+  },
+  {
+    "key": "PHP_OPEN_TAG",
+    "description": "<?php or <?",
+    "matches": [
+      "<?php",
+      "<?"
+    ]
+  },
+  {
+    "key": "PHP_CLOSE_TAG",
+    "description": "?>",
+    "matches": [
+      "?>"
+    ]
+  },
+  {
+    "key": "LESS_THAN",
+    "description": "<",
+    "matches": "<"
+  },
+  {
+    "key": "GREATER_THAN",
+    "description": ">",
+    "matches": ">"
+  },
+  {
+    "key": "QUESTION_MARK",
+    "description": "?",
+    "matches": "?"
+  },
+  {
+    "key": "BANG",
+    "description": "!",
+    "matches": "!"
+  },
+  {
+    "key": "COLON",
+    "description": ":",
+    "matches": ":"
+  },
+  {
+    "key": "SEMICOLON",
+    "description": ";",
+    "matches": ";"
+  },
+  {
+    "key": "COMMA",
+    "description": ",",
+    "matches": ","
+  },
+  {
+    "key": "DOT",
+    "description": ".",
+    "matches": "."
+  },
+  {
+    "key": "MINUS",
+    "description": "-",
+    "matches": "-"
+  },
+  {
+    "key": "UNDERSCORE",
+    "description": "_",
+    "matches": "_"
+  },
+  {
+    "key": "HASH",
+    "description": "#",
+    "matches": "#"
+  },
+  {
+    "key": "AT",
+    "description": "@",
+    "matches": "@"
+  },
+  {
+    "key": "DOLLAR",
+    "description": "$",
+    "matches": "$"
+  },
+  {
+    "key": "SLASH",
+    "description": "/",
+    "matches": "/"
+  },
+  {
+    "key": "BACKSLASH",
+    "description": "\\",
+    "matches": [
+      92,
+      39
+    ],
+    "force_single_matches": true,
+    "ignore_in": [
+      "multi_matches"
+    ]
+  },
+  {
+    "key": "PIPE",
+    "description": "|",
+    "matches": "|"
+  },
+  {
+    "key": "AMPERSAND",
+    "description": "&",
+    "matches": "&"
+  },
+  {
+    "key": "PERCENT",
+    "description": "%",
+    "matches": "%"
+  },
+  {
+    "key": "CARET",
+    "description": "^",
+    "matches": "^"
+  },
+  {
+    "key": "TILDE",
+    "description": "~",
+    "matches": "~"
+  },
+  {
+    "key": "BACKTICK",
+    "description": "`",
+    "matches": "`"
+  },
+  {
+    "key": "LEFT_PAREN",
+    "description": "(",
+    "matches": "("
+  },
+  {
+    "key": "RIGHT_PAREN",
+    "description": ")",
+    "matches": ")"
+  },
+  {
+    "key": "LEFT_BRACE",
+    "description": "{",
+    "matches": "{"
+  },
+  {
+    "key": "RIGHT_BRACE",
+    "description": "}",
+    "matches": "}"
+  },
+  {
+    "key": "LEFT_BRACKET",
+    "description": "[",
+    "matches": "["
+  },
+  {
+    "key": "RIGHT_BRACKET",
+    "description": "]",
+    "matches": "]"
+  },
+  {
+    "key": "VARIADIC",
+    "description": "...",
+    "matches": [
+      "..."
+    ]
+  },
+  {
+    "key": "MEMBER_ACCESS",
+    "description": "->",
+    "matches": [
+      "->"
+    ]
+  },
+  {
+    "key": "DOUBLE_ARROW",
+    "description": "=>",
+    "matches": [
+      "=>"
+    ]
+  },
+  {
+    "key": "STATIC_MEMBER_ACCESS",
+    "description": "::",
+    "matches": [
+      "::"
+    ]
+  },
+  {
+    "key": "QUESTION_QUESTION",
+    "description": "??",
+    "matches": [
+      "??"
+    ]
+  },
+  {
+    "key": "LESS_THAN_EQUAL",
+    "description": "<=",
+    "matches": [
+      "<="
+    ]
+  },
+  {
+    "key": "GREATER_THAN_EQUAL",
+    "description": ">=",
+    "matches": [
+      ">="
+    ]
+  },
+  {
+    "key": "ASSIGN",
+    "description": "=",
+    "matches": "="
+  },
+  {
+    "key": "EQUAL_EQUAL",
+    "description": "==",
+    "matches": [
+      "=="
+    ]
+  },
+  {
+    "key": "EQUAL_EQUAL_EQUAL",
+    "description": "===",
+    "matches": [
+      "==="
+    ]
+  },
+  {
+    "key": "NOT_EQUAL",
+    "description": "!=",
+    "matches": [
+      "!="
+    ]
+  },
+  {
+    "key": "NOT_EQUAL_EQUAL",
+    "description": "!==",
+    "matches": [
+      "!=="
+    ]
+  },
+  {
+    "key": "OR",
+    "description": "||",
+    "matches": [
+      "||"
+    ]
+  },
+  {
+    "key": "AND",
+    "description": "&&",
+    "matches": [
+      "&&"
+    ]
+  },
+  {
+    "key": "PLUS",
+    "description": "+",
+    "matches": "+"
+  },
+  {
+    "key": "MUL",
+    "description": "*",
+    "matches": "*"
+  },
+  {
+    "key": "IDENTIFIER",
+    "description": "variable name",
+    "matches": null
+  },
+  {
+    "key": "INTEGER",
+    "description": "1, 2, 3, 4, 5, 6, 7, 8, 9, 0",
+    "matches": null
+  },
+  {
+    "key": "FLOAT",
+    "description": "1.0, 2.0, 3.0, 4.0, 5.0",
+    "matches": null
+  },
+  {
+    "key": "STRING",
+    "description": "",
+    "matches": null
+  },
+  {
+    "key": "BOOLEAN",
+    "description": "true, false",
+    "matches": [
+      "true",
+      "false"
+    ]
+  },
+  {
+    "key": "NULL_",
+    "description": "null",
+    "matches": [
+      "null"
+    ]
+  },
+  {
+    "key": "NAMESPACE",
+    "description": "namespace",
+    "matches": [
+      "namespace"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "TRAIT",
+    "description": "trait",
+    "matches": [
+      "trait"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "USE",
+    "description": "use",
+    "matches": [
+      "use"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "CLASS",
+    "description": "class",
+    "matches": [
+      "class"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "INTERFACE",
+    "description": "interface",
+    "matches": [
+      "interface"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "EXTENDS",
+    "description": "extends",
+    "matches": [
+      "extends"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "IMPLEMENTS",
+    "description": "implements",
+    "matches": [
+      "implements"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "FUNCTION",
+    "description": "function",
+    "matches": [
+      "function"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "PUBLIC",
+    "description": "public",
+    "matches": [
+      "public"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "PRIVATE",
+    "description": "private",
+    "matches": [
+      "private"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "PROTECTED",
+    "description": "protected",
+    "matches": [
+      "protected"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "STATIC",
+    "description": "static",
+    "matches": [
+      "static"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "ABSTRACT",
+    "description": "abstract",
+    "matches": [
+      "abstract"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "FINAL",
+    "description": "final",
+    "matches": [
+      "final"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "READONLY",
+    "description": "readonly",
+    "matches": [
+      "readonly"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "RETURN",
+    "description": "return",
+    "matches": [
+      "return"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "IF",
+    "description": "if",
+    "matches": [
+      "if"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "ELSE",
+    "description": "else",
+    "matches": [
+      "else"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "WHILE",
+    "description": "while",
+    "matches": [
+      "while"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "FOR",
+    "description": "for",
+    "matches": [
+      "for"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "FOREACH",
+    "description": "foreach",
+    "matches": [
+      "foreach"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "AS",
+    "description": "as",
+    "matches": [
+      "as"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "ECHO",
+    "description": "echo",
+    "matches": [
+      "echo"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "BREAK",
+    "description": "break",
+    "matches": [
+      "break"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "CONTINUE",
+    "description": "continue",
+    "matches": [
+      "continue"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "NEW",
+    "description": "new",
+    "matches": [
+      "new"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "THIS",
+    "description": "$this",
+    "matches": [
+      "$this"
+    ],
+    "keyword": true
+  },
+  {
+    "key": "INSTANCEOF",
+    "description": "instanceof",
+    "matches": [
+      "instanceof"
+    ],
+    "keyword": true
+  }
+]

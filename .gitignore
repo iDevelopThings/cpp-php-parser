@@ -1,0 +1,13 @@
+/x64
+/Release
+/interpreter.dir
+/dump
+/CMakeFiles
+/cmake-build-debug
+/cmake-build-release
+/.cache
+/ZERO_CHECK.vcxproj.filters
+/ZERO_CHECK.vcxproj
+/interpreter.vcxproj.filters
+/interpreter.vcxproj
+/interpreter.sln
